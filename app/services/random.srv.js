@@ -7,8 +7,8 @@ module.exports.generateRandom = function(req,success,error){
     var appPackage;
     var apkInstall;
     console.log("..."+JSON.stringify(req));
-    switch(req.aplication){
-        case 'HABITICA_WEB':
+    switch(req.aplication.toUpperCase()){
+        case 'HABITICA':
             appPackage = 'com.habitrpg.android.habitica';
             apkInstall = 'habitica.apk';
             break;
